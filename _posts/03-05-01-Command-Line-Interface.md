@@ -5,9 +5,9 @@ anchor: command_line_interface
 
 ## Command Line Interface {#command_line_interface_title}
 
-PHP diciptakan terutama untuk menulis aplikasi web, tetapi juga berguna untuk scripting baris perintah interface (CLI) program. Program baris perintah PHP dapat membantu Anda mengotomatisasi tugas-tugas umum seperti pengujian, penyebaran, dan aplikasi administrivia.
+Pada dasarnya, PHP diciptakan untuk menulis aplikasi web. Akan tetapi PHP juga berguna untuk scripting program command line interface (CLI). CLI dengan PHP dapat membantu Anda mengotomatisasi tugas-tugas umum seperti pengujian, distribusi, dan aplikasi administratif.
 
-Program CLI PHP yang kuat karena Anda dapat menggunakan kode aplikasi Anda secara langsung tanpa harus membuat dan mengamankan web GUI untuk itu. Hanya pastikan untuk tidak menempatkan script CLI PHP di akar web publik Anda!
+Program CLI PHP sangat bermanfaat karena Anda dapat menggunakan kode aplikasi Anda secara langsung tanpa harus membuat dan mengamankan web GUI untuk itu. Hanya pastikan untuk tidak menempatkan script CLI PHP di root web publik Anda!
 
 Coba jalankan PHP dari baris perintah Anda:
 
@@ -15,7 +15,7 @@ Coba jalankan PHP dari baris perintah Anda:
 > php -i
 {% endhighlight %}
 
-The `-i` option akan mencetak konfigurasi PHP Anda seperti [phpinfo ``] [phpinfo] fungsi.
+Opsi `-i` akan menampilkan konfigurasi PHP Anda seperti fungsi [`phpinfo`] [phpinfo].
 
 Mari kita menulis "Hello, $ name" Program CLI sederhana. Untuk mencobanya, membuat file bernama `hello.php`, seperti di bawah ini.
 
@@ -29,11 +29,11 @@ $name = $argv[1];
 echo "Hello, $name\n";
 {% endhighlight %}
 
-PHP set up dua variabel khusus berdasarkan argumen naskah Anda dijalankan dengan. [`$` argc] [argc] adalah variabel integer yang berisi argumen * count * dan [`$ argv`] [argv] adalah variabel array yang berisi nilai * setiap argumen *. Argumen pertama selalu nama file script PHP Anda, dalam hal ini `hello.php`.
+PHP set up dua variabel khusus berdasarkan argumen apa script Anda dijalankan. [`$` argc] [argc] adalah variabel integer yang berisi argumen * count * dan [`$ argv`] [argv] adalah variabel array yang berisi nilai * setiap argumen *. Argumen pertama selalu nama file script PHP Anda, dalam hal ini `hello.php`.
 
-The `exit ()` ekspresi digunakan dengan nomor non-nol untuk membiarkan shell tahu bahwa perintah gagal. Kode keluar yang umum digunakan dapat ditemukan [di sini] [exit-kode]
+Expresi `exit ()` digunakan dengan nomor selain nol untuk memberitahu shell bahwa perintah gagal. Kode keluar yang umum digunakan dapat ditemukan [di sini] [exit-kode].
 
-Untuk menjalankan script kita, di atas, dari baris perintah:
+Untuk menjalankan script kita di atas, jalankan baris perintah:
 
 {% highlight bash %}
 > php hello.php
