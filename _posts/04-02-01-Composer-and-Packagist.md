@@ -66,9 +66,9 @@ Sekarang Anda dapat menggunakan dependensi proyek Anda, dan mereka akan otomatis
 
 ### Meng-update ketergantungan
 
-Composer membuat sebuah file bernama `composer.lock` yang menyimpan versi yang tepat dari setiap paket yang di-download ketika Anda pertama kali menjalankan `php composer.phar install`. Jika Anda berbagi proyek Anda dengan coders lain dan file `composer.lock` merupakan bagian dari distribusi Anda, ketika mereka menjalankan `php` composer.phar menginstal mereka akan mendapatkan versi yang sama seperti Anda. Untuk memperbarui dependensi, jalankan `update` php composer.phar.
+Composer membuat sebuah file bernama `composer.lock` yang menyimpan versi yang tepat dari setiap paket yang di-download ketika Anda pertama kali menjalankan `php composer.phar install`. Jika Anda berbagi proyek Anda dengan pengembang lain dan file `composer.lock` merupakan bagian dari distribusi Anda, ketika mereka menjalankan `php composer.phar install` mereka akan mendapatkan versi yang sama seperti Anda. Untuk memperbarui dependensi, jalankan `php composer.phar update`.
 
-Ini sangat berguna ketika Anda mendefinisikan persyaratan versi yang fleksibel. Misalnya persyaratan versi ~ 1,8 berarti "sesuatu yang lebih baru dari 1.8.0, tetapi kurang dari 2.0.x-dev". Anda juga dapat menggunakan `*` wildcard seperti dalam `1.8. *`. Sekarang pembaruan php composer.phar `perintah` s Composer akan meng-upgrade semua dependensi Anda ke versi terbaru yang sesuai dengan batasan yang Anda tetapkan.
+Hal ini sangat berguna ketika Anda mendefinisikan persyaratan versi yang fleksibel. Misalnya persyaratan versi ~ 1,8 berarti "sesuatu yang lebih baru dari 1.8.0, tetapi kurang dari 2.0.x-dev". Anda juga dapat menggunakan `*` wildcard seperti dalam `1.8. *`. Sekarang dengan menjalankan perintah `php composer.phar update`, Composer akan meng-upgrade semua dependensi Anda ke versi terbaru sesuai dengan batasan yang Anda tetapkan.
 
 ### Notifikasi Update
 
@@ -77,7 +77,7 @@ GitHub dan BitBucket menyumbang `composer.json` file dan mengirim email dengan r
 
 ### Cek ketergantungan Anda terhadap masalah keamanan
 
-The [Security Advisories Checker] [4] adalah layanan web dan alat baris perintah, keduanya akan memeriksa file Anda `composer.lock` dan memberitahu Anda jika Anda perlu memperbarui dependensi Anda.
+The [Security Advisories Checker] [4] adalah layanan web dan alat perintah baris, keduanya akan memeriksa file `composer.lock` Anda dan memberitahu Anda jika Anda perlu memperbarui dependensi Anda.
 
 * [Pelajari Composer][5]
 
