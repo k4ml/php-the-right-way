@@ -6,56 +6,56 @@ anchor: composer_and_packagist
 
 ## Composer dan Packagist {#composer_and_packagist_title}
 
-Komposer adalah brilian ketergantungan manajer ** ** untuk PHP. Daftar dependensi proyek Anda dalam file `composer.json` dan, dengan beberapa perintah sederhana, Komposer secara otomatis akan mendownload dependensi proyek Anda dan setup autoloading untuk Anda.
+Composer adalah sebuah pengelola ketergantungan (_dependency manager_) yang brilian untuk PHP. Daftarkan ketergantungan proyek Anda dalam file `composer.json`, lalu dengan beberapa perintah sederhana, Composer secara otomatis akan mendownload ketergantungan proyek Anda dan melakukan setup autoloading untuk Anda.
 
-Sudah ada banyak PHP perpustakaan yang kompatibel dengan Composer, siap untuk digunakan dalam proyek Anda. Ini "paket" yang tercantum pada [Packagist] [1], repositori resmi untuk Komposer-kompatibel PHP perpustakaan.
+Sudah ada banyak _library_ PHP yang kompatibel dengan Composer, siap untuk digunakan dalam proyek Anda. "Paket-paket" tersebut terdaftar pada [Packagist] [1], repositori resmi untuk _library_ PHP yang kompatibel dengan Composer.
 
 ### Cara Install Composer
 
-Anda dapat menginstal Composer lokal (dalam direktori kerja Anda saat ini, meskipun hal ini tidak lagi dianjurkan) atau global (misalnya / usr / local / bin). Mari kita berasumsi bahwa Anda ingin menginstal Composer lokal. Dari direktori root proyek Anda:
+Anda dapat menginstal Composer di lokal (dalam direktori kerja Anda saat ini, meskipun hal ini tidak lagi dianjurkan) atau global (misalnya `/usr/local/bin`). Kita berasumsi bahwa Anda ingin menginstal Composer lokal. Dari direktori root proyek Anda:
 
     curl -s https://getcomposer.org/installer | php
 
-Ini akan men-download `composer.phar` (arsip biner PHP). Anda dapat menjalankan ini dengan `php` untuk mengelola dependensi proyek Anda. <strong> Harap Catatan: </ strong> Jika Anda pipa download kode langsung ke penerjemah, silakan baca kode online untuk mengkonfirmasi aman.
+Perintah di atas akan men-download `composer.phar` (arsip biner PHP). Anda dapat menjalankan composer dengan `php` untuk mengelola dependensi proyek Anda. <strong> Harap dicatat bahwa </ strong> Jika Anda mendownload dengan melakukan `pipe` langsung ke PHP, silakan baca sumber kode nya terlebih dulu untuk mengkonfirmasi bahwa kode tersebut aman.
 
 #### Install di Windows
 
-Untuk pengguna Windows cara termudah untuk bangun dan berjalan adalah dengan menggunakan [ComposerSetup] [6] installer, yang melakukan instalasi global dan set up Anda `$ PATH` sehingga Anda hanya dapat memanggil `komposer` dari direktori manapun dalam Anda baris perintah.
+Untuk pengguna Windows cara termudah untuk memulai adalah dengan menggunakan [ComposerSetup] [6] installer, yang melakukan instalasi global dan set up `$ PATH` Anda sehingga Anda dapat memanggil `composer` dari direktori manapun dalam `Command Line` Anda.
 
 ### Cara Install Composer (manual)
 
-Manual menginstal Composer adalah teknik canggih; Namun, ada berbagai alasan mengapa pengembang mungkin lebih memilih metode ini vs menggunakan rutin instalasi interaktif. Instalasi interaktif memeriksa instalasi PHP Anda untuk memastikan bahwa:
+Menginstal Composer secara manual adalah teknik canggih; Namun, ada berbagai alasan mengapa pengembang mungkin lebih memilih metode ini vs menggunakan rutin instalasi interaktif. Instalasi interaktif memeriksa instalasi PHP Anda untuk memastikan bahwa:
 
-- versi PHP yang cukup sedang digunakan
-- `Phar` file. dapat dijalankan dengan benar
+- versi PHP yang sedang digunakan mencukupi kebutuhan
+- `Phar` file dapat dijalankan dengan benar
 - hak akses direktori tertentu yang cukup
 - ekstensi bermasalah tertentu tidak dimuat
-- tertentu `php.ini` pengaturan ditetapkan
+- Pengaturan tertentu pada `php.ini` telah diatur
 
-Karena instalasi manual tidak ada pemeriksaan ini melakukan, Anda harus memutuskan apakah trade-off sangat berharga untuk Anda. Dengan demikian, di bawah ini adalah bagaimana untuk mendapatkan Komposer secara manual:
+Karena instalasi manual tidak melakukan pemeriksaan di atas, Anda harus memutuskan apakah _trade-off_ nya sangat berharga untuk Anda. Dengan demikian, di bawah ini adalah bagaimana untuk mendapatkan Komposer secara manual:
 
     curl -s https://getcomposer.org/composer.phar -o $HOME/local/bin/composer
     chmod +x $HOME/local/bin/composer
 
-Jalan `$ HOME / local / bin` (atau direktori pilihan Anda) harus di `$ PATH` variabel lingkungan Anda. Hal ini akan mengakibatkan seorang komposer `perintah` yang tersedia.
+_Path_ `$HOME/local/bin` (atau direktori pilihan Anda) seharusnya sudah masuk dalam `$PATH` -- variabel lingkungan Anda. Hal ini akan mengakibatkan perintah `composer` menjadi tersedia.
 
-Bila Anda menemukan dokumentasi yang menyatakan untuk menjalankan Komposer sebagai `php` composer.phar install, Anda dapat mengganti bahwa dengan:
+Bila Anda menemukan dokumentasi yang menyatakan untuk menjalankan `Composer` sebagai `php composer.phar install`, Anda dapat mengganti dengan:
 
     composer install
     
 Bagian ini akan menganggap Anda telah menginstal komposer global.
 
-### Cara mendefinisakan ketergantungan dan cara installnya
+### Cara mendefinisikan ketergantungan dan cara installnya
 
-Komposer melacak dependensi proyek Anda dalam sebuah file yang bernama `composer.json`. Anda dapat mengelolanya dengan tangan jika Anda suka, atau penggunaan Composer sendiri. The `komposer memerlukan` perintah menambahkan ketergantungan proyek dan jika Anda tidak memiliki file `composer.json`, salah satu akan dibuat. Berikut ini adalah contoh yang menambahkan [Ranting] [2] sebagai ketergantungan proyek Anda.
+Composer melacak dependensi proyek Anda dalam sebuah file yang bernama `composer.json`. Anda dapat mengelolanya dengan teks editor jika Anda suka, atau menggunakan `Composer` itu sendiri. Perintah `composer require` dapat menambahkan ketergantungan proyek dan jika Anda tidak memiliki file `composer.json`, file itu akan dibuat. Berikut ini adalah contoh yang menambahkan [Twig] [2] sebagai ketergantungan proyek Anda.
 
 	composer require twig/twig:~1.8
 
-Atau yang `perintah` komposer init akan memandu Anda melalui penciptaan file penuh `composer.json` untuk proyek Anda. Either way, setelah Anda membuat file `composer.json` Anda, Anda dapat memberitahu Composer untuk men-download dan menginstal dependensi Anda ke `vendor /` direktori. Hal ini juga berlaku untuk proyek-proyek yang telah anda download yang sudah menyediakan file `composer.json`:
+Sebagai alternatif, perintah `composer init` akan memandu Anda melalui penciptaan file `composer.json` untuk proyek Anda. Selain itu, jika anda telah Anda membuat file `composer.json`, Anda dapat memberitahu Composer untuk men-download dan menginstal dependensi Anda ke direktori `vendor/`. Hal ini juga berlaku untuk proyek-proyek yang telah anda download yang sudah menyediakan file `composer.json`:
 
     composer install
 
-Selanjutnya, tambahkan baris ini ke file PHP utama aplikasi Anda; ini akan memberitahu PHP untuk menggunakan autoloader Composer untuk dependensi proyek Anda.
+Selanjutnya, tambahkan baris ini ke file utama aplikasi PHP Anda; ini akan memberitahu PHP untuk menggunakan autoloader Composer sebagai dependensi proyek Anda.
 
 {% highlight php %}
 <?php
@@ -66,9 +66,9 @@ Sekarang Anda dapat menggunakan dependensi proyek Anda, dan mereka akan otomatis
 
 ### Meng-update ketergantungan
 
-Komposer menciptakan sebuah file bernama `composer.lock` yang menyimpan versi yang tepat dari setiap paket yang di-download ketika Anda pertama kali menjalankan `php composer.phar install`. Jika Anda berbagi proyek Anda dengan coders lain dan file `composer.lock` merupakan bagian dari distribusi Anda, ketika mereka menjalankan `php` composer.phar menginstal mereka akan mendapatkan versi yang sama seperti Anda. Untuk memperbarui dependensi, jalankan `update` php composer.phar.
+Composer membuat sebuah file bernama `composer.lock` yang menyimpan versi yang tepat dari setiap paket yang di-download ketika Anda pertama kali menjalankan `php composer.phar install`. Jika Anda berbagi proyek Anda dengan coders lain dan file `composer.lock` merupakan bagian dari distribusi Anda, ketika mereka menjalankan `php` composer.phar menginstal mereka akan mendapatkan versi yang sama seperti Anda. Untuk memperbarui dependensi, jalankan `update` php composer.phar.
 
-Ini sangat berguna ketika Anda mendefinisikan persyaratan versi fleksibel. Misalnya persyaratan versi ~ 1,8 berarti "sesuatu yang lebih baru dari 1.8.0, tetapi kurang dari 2.0.x-dev". Anda juga dapat menggunakan `*` wildcard seperti dalam `1.8. *`. Sekarang pembaruan php composer.phar `perintah` s Composer akan meng-upgrade semua dependensi Anda ke versi terbaru yang sesuai dengan batasan yang Anda tetapkan.
+Ini sangat berguna ketika Anda mendefinisikan persyaratan versi yang fleksibel. Misalnya persyaratan versi ~ 1,8 berarti "sesuatu yang lebih baru dari 1.8.0, tetapi kurang dari 2.0.x-dev". Anda juga dapat menggunakan `*` wildcard seperti dalam `1.8. *`. Sekarang pembaruan php composer.phar `perintah` s Composer akan meng-upgrade semua dependensi Anda ke versi terbaru yang sesuai dengan batasan yang Anda tetapkan.
 
 ### Notifikasi Update
 
