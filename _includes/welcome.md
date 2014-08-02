@@ -19,7 +19,7 @@ terlanjur mendarahdaging.
 
 Dokumen ini akan terus diperbarui dengan maklumat dan contoh-contoh terbaru sehingga akan terus bermanfaat.
 
-## Terjemahan di Bahasa Lain
+## Terjemahan dalam Bahasa Lain
 
 _PHP: The Right Way_ sudah diterjemahkan ke banyak bahasa lain:
 
@@ -39,14 +39,14 @@ _PHP: The Right Way_ sudah diterjemahkan ke banyak bahasa lain:
 * [Turkish](http://hkulekci.github.io/php-the-right-way/)
 * [Slovenian](http://sl.phptherightway.com)
 
-## Ingin berkontribusi?
+## Ingin menyumbang ?
 
-Ayo bantu website ini agar menjadi sumber terbaik bagi para _progammer_ PHP baru! [Ayo berkontribusi di GitHub][1]
+Jom bantu laman ini agar menjadi sumber terbaik bagi para pengaturcara PHP baru! [Jom menyumbang di GitHub][1]
 
 ## Bantu sebarkan
 
-_PHP: The Right Way_ memiliki gambar _banner_ yang bisa dipasang di website Anda. Tunjukkan kepedulian anda
-kepada pengaturcara PHP baru untuk mengetahui letak informasi yang bagus.
+_PHP: The Right Way_ memiliki gambar _banner_ yang boleh dipasang di laman web Anda. Tunjukkan kepedulian anda
+kepada pengaturcara PHP baru untuk mengetahui di mana letaknya maklumat yang bagus.
 
 [Gambar Banner][2]
 
