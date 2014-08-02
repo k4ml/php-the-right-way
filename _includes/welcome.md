@@ -1,18 +1,23 @@
 # Pendahuluan
 
-Di internet, tersebar banyak sekali tutorial kuno yang menyesatkan _programmer_ PHP.
-Mengajarkan cara buruk dan menyebarkan contoh kode yang tidak aman.
-___PHP: The Right Way___ adalah referensi yang mengikuti standar pengkodean modern,
-ditujukan bagi para _programmer_ baru agar dapat membangun software berkualitas menggunakan PHP.
+Di internet, tersebar banyak sekali tutorial kuno yang menyesatkan pengaturcara PHP.
+Mengajarkan cara buruk dan menyebarkan contoh kod yang tidak selamat.
+___PHP: The Right Way___ adalah rujukan yang mengikuti standard pengaturcaraan moden,
+ditujukan bagi para pengaturcara baru agar dapat membangunkan aplikasi berkualiti menggunakan PHP.
 
-Sebetulnya, tidak ada satu cara autentik untuk menggunakan PHP. Namun, website ini
-bermaksud untuk mengenalkan _programmer_ PHP baru kepada hal-hal yang tidak mereka temukan selama ini.
+Sebetulnya, tidak ada satu cara autentik untuk menggunakan PHP. Laman ini bertujuan untuk mengenalkan
+kepada pengaturcara baru PHP beberapa topik yang mungkin mereka tidak akan jumpa melainkan bila ianya
+sudah terlambat. Ia juga bertujuan memberikan pengaturcara-pengaturcara berpengalaman idea-idea baru
+berkaitan topik-topik yang mungkin telah mereka sedia maklum tanpa sebarang perancangan untuk menelitinya
+kembali. Laman ini juga tidak akan memberitahu _tools_ apa yang perlu digunakan tetapi mencadangkan
+beberapa pilihan yang ada dan jika berkesempatan menerangkan perbezaaan dalam setiap pendekatan serta
+_use-case_.
 
-Bagi _programmer_ _senior_, tulisan ini dapat menjadi penyegar pada apa yang telah
+Bagi pengaturcara _senior_, tulisan ini dapat menjadi penyegar pada apa yang telah
 mereka lakukan selama ini. Tulisan ini juga akan memperbarui cara-cara lama yang sudah
 terlanjur mendarahdaging.
 
-Dokumen ini akan terus diperbarui dengan informasi dan contoh-contoh terbaru sehingga akan terus bermanfaat.
+Dokumen ini akan terus diperbarui dengan maklumat dan contoh-contoh terbaru sehingga akan terus bermanfaat.
 
 ## Terjemahan di Bahasa Lain
 
@@ -41,7 +46,7 @@ Ayo bantu website ini agar menjadi sumber terbaik bagi para _progammer_ PHP baru
 ## Bantu sebarkan
 
 _PHP: The Right Way_ memiliki gambar _banner_ yang bisa dipasang di website Anda. Tunjukkan kepedulian anda
-kepada _programmer_ PHP baru untuk mengetahui letak informasi yang bagus.
+kepada pengaturcara PHP baru untuk mengetahui letak informasi yang bagus.
 
 [Gambar Banner][2]
 
